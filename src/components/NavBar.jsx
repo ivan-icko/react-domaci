@@ -8,23 +8,23 @@ import ReorderIcon from '@mui/icons-material/Reorder';
 function NavBar() {
 
     const [openLinks,setOpenLinks]=useState(false);
-    
+    const toggleNavbar=()=>{
+            setOpenLinks(!openLinks);
+    }
   return <div className='navbar'>
       <div className="leftSide" id={openLinks?"open":"close"}>
           <img src={Slika} alt="" />
           <div className='hiddenLinks'>
-          <Link to="/home">Home</Link>
-          <Link to="menu">Menu</Link>
-          <Link to="about">About</Link>
-          <Link to="contact">COntact</Link>
+          <Link to="/home">Pocetna</Link>
+          <Link to="menu">Meni</Link>
+          <Link to="contact">Kokntakt</Link>
           </div>
       </div>
       <div className="rightSide">
-          <Link to="/home">Home</Link>
-          <Link to="menu">Menu</Link>
-          <Link to="about">About</Link>
-          <Link to="contact">COntact</Link>
-          <button>
+          <Link to="/home">Pocetna</Link>
+          <Link to="menu">Meni</Link>
+          <Link to="contact">Kontakt</Link>
+          <button onClick={toggleNavbar}>
               <ReorderIcon/>
           </button>
       </div>
