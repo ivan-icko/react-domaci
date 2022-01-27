@@ -1,6 +1,6 @@
 import NecistaKrv from "../tools/knjiga1.jpg"
-import Krv from "../tools/knjiga1.jpg"
-import Necista from "../tools/knjiga1.jpg"
+import Pesma from "../tools/knjiga2.jpg"
+import Putnik from "../tools/knjiga3.jpg"
 
 export const MenuList=[
     {
@@ -10,22 +10,17 @@ export const MenuList=[
         price:300
     },
     {
-        name:"Pablo",
-        autor:"Borisav Stanković",
-        image:Krv,
-        price:300
+        name:"Ahilova pesma",
+        autor:"Madlin miler",
+        image:Pesma,
+        price:599
     },
     {
-        name:"Miligram",
-        autor:"Borisav Stanković",
-        image:Necista,
-        price:300
+        name:"Usamljeni putnik",
+        autor:"Dzek keruak",
+        image:Putnik,
+        price:750
     },
-    {
-        name:"Nekolicina",
-        autor:"Borisav Stanković",
-        image:Necista,
-        price:300
-    }
+    
 
 ]

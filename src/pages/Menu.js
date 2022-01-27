@@ -19,12 +19,11 @@ function Menu() {
             return <MenuItem key={key} image={menuItem.image} name={menuItem.name} price={menuItem.price} autor={menuItem.autor}/>;
         })}
         </div>
-        <p>----------------------------------------------------------</p>
-      <div className="menuList">
+      {/* <div className="menuList">
         {MenuList.map((menuItem,key)=>{
             return <MenuItem key={key} image={menuItem.image} name={menuItem.name} price={menuItem.price} autor={menuItem.autor}/>;
         })}
-      </div>
+      </div> */}
   </div>;
 }
 
