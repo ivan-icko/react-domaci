@@ -34,6 +34,15 @@
   cursor: pointer;
 }
 
+.App input{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 300px;
+  height: 20px;
+  font-size: 20px;
+  padding-left: 10px;
+}
+
 .menuItem div {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;

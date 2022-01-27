@@ -7,13 +7,10 @@ function Contact() {
 
     function sendEmail(e){
         e.preventDefault();
-
-        if(document.getElementsByName('email').value==""){
         emailjs.sendForm("service_qxexzjs","template_9enyowp",e.target,"user_oyCFMGrGEjyN1GVcYV19v").then(res=>{
             console.log(res);
         }).catch(err=>console.log(err));
-    }
-        alert("Sva polja su obavezna!");
+        alert("Poruka je poslata!");
     }
 
 
@@ -25,10 +22,10 @@ function Contact() {
           <form id="contact-form" method='POST' onSubmit={sendEmail}>
 
               <label htmlFor='name'>Ime</label>
-              <input name="name" placeholder='Unesite ime' type="text"></input>
+              <input name="name" placeholder='Unesite ime' type="text" required></input>
 
               <label htmlFor='email'>Email</label>
-              <input name="email" placeholder='Unesite email' type="email"></input>
+              <input name="email" placeholder='Unesite email' type="email" required></input>
              
               <label htmlFor='message'>Poruka</label>
               <textarea rows="5" placeholder="Unesite poruku" name="message" required></textarea>

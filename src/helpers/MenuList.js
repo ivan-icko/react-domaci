@@ -4,22 +4,28 @@ import Necista from "../tools/knjiga1.jpg"
 
 export const MenuList=[
     {
-        name:"Nečicsta krv",
+        name:"Necista krv",
         autor:"Borisav Stanković",
         image:NecistaKrv,
         price:300
     },
     {
-        name:" krv",
+        name:"Pablo",
         autor:"Borisav Stanković",
         image:Krv,
         price:300
     },
     {
-        name:"Nečicsta",
+        name:"Miligram",
         autor:"Borisav Stanković",
         image:Necista,
         price:300
     },
+    {
+        name:"Nekolicina",
+        autor:"Borisav Stanković",
+        image:Necista,
+        price:300
+    }
 
 ]
