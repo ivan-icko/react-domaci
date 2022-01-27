@@ -7,10 +7,16 @@ function Contact() {
 
     function sendEmail(e){
         e.preventDefault();
+
+        if(document.getElementsByName('email').value==""){
         emailjs.sendForm("service_qxexzjs","template_9enyowp",e.target,"user_oyCFMGrGEjyN1GVcYV19v").then(res=>{
             console.log(res);
         }).catch(err=>console.log(err));
     }
+        alert("Sva polja su obavezna!");
+    }
+
+
 
   return <div className='contact'>
       <div className='leftSide' style={{backgroundImage:`url(${KnjigaContact})`}}></div>
