@@ -10,14 +10,20 @@ export const MenuList=[
         price:300
     },
     {
+        name:"Necista",
+        autor:"Borisav Stanković",
+        image:NecistaKrv,
+        price:300
+    },
+    {
         name:"Ahilova pesma",
-        autor:"Madlin miler",
+        autor:"Madlin Miler",
         image:Pesma,
         price:599
     },
     {
         name:"Usamljeni putnik",
-        autor:"Dzek keruak",
+        autor:"Dzek Keruak",
         image:Putnik,
         price:750
     },

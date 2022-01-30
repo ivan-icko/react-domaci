@@ -17,7 +17,7 @@ function NavBar() {
           <div className='hiddenLinks'>
           <Link to="/home">Pocetna</Link>
           <Link to="menu">Meni</Link>
-          <Link to="contact">Kokntakt</Link>
+          <Link to="contact">Kontakt</Link>
           </div>
       </div>
       <div className="rightSide">

@@ -7,11 +7,11 @@ import { useState } from 'react';
 function Menu() {
   const [searchTerm,setSearchTerm]=useState("")
   return <div className='menu'>
-      <h1 className='menuTitle'>Meni</h1>
+      <h1 className='menuTitle'>Biblioteka</h1>
       <input type="text" placeholder='Pretrazi knjigu...' onChange={event=>{setSearchTerm(event.target.value)}}></input>
       <div className='menuList'>
       {MenuList.filter((val)=>{
-        if(searchTerm==""){
+        if(searchTerm===""){
           return val;
         }
         else if(val.name.toLowerCase().includes(searchTerm.toLowerCase())){return val;}
